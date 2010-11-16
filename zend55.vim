@@ -1,0 +1,75 @@
+set background=dark
+
+hi clear
+
+if exists('syntax_on')
+  syntax reset
+endif
+
+let g:colors_name='Zend55'
+
+hi CursorLine         guibg=#202020
+hi CursorColumn       guibg=#202020
+hi MatchParen         guibg=#888888 gui=bold
+hi Pmenu              guifg=#f6f3e8 guibg=#444444
+hi PmenuSel           guifg=#000000 guibg=#cae681
+
+hi Cursor             guifg=#000000 guibg=#ffffff gui=none
+hi Normal             guifg=#ffffff guibg=#000000 gui=NONE
+hi NonText            guifg=#808080 guibg=#000000 gui=NONE
+hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
+hi StatusLine         guifg=#ffffff guibg=#444444 gui=NONE
+hi StatusLineNC       guifg=#ffffff guibg=#444444 gui=bold
+hi VertSplit          guifg=#444444 guibg=#444444 gui=NONE
+hi Folded             guifg=#a0a0a0 guibg=#333333 gui=NONE
+hi vimFold            guifg=NONE    guibg=#000000 gui=bold
+hi FoldColumn         guifg=#666666 guibg=#000000 gui=NONE
+" hi Title              guifg=#f6f3e8 guibg=NONE  gui=bold
+hi Visual             guifg=NONE guibg=#004040 gui=NONE
+hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
+" hi SpecialKey         guifg=#808080 guibg=#343434 gui=NONE
+
+hi Delimiter          guifg=#ff0000 guibg=NONE gui=none
+hi Comment            guifg=#808080 guibg=NONE gui=italic
+hi Todo               guifg=#808080 guibg=NONE gui=bold
+hi Constant           guifg=#00c4ff guibg=NONE gui=none
+hi String             guifg=#00c400 guibg=NONE gui=none
+hi Identifier         guifg=#c40000 guibg=NONE gui=none
+hi Function           guifg=#00c4ff guibg=NONE gui=none
+hi Type               guifg=#00c4ff guibg=NONE gui=none
+hi Statement          guifg=#00c4ff guibg=NONE gui=italic
+hi Keyword            guifg=#00c4ff guibg=NONE gui=none
+hi PreProc            guifg=#00c4ff guibg=NONE gui=italic
+hi Number             guifg=#ff0000 guibg=NONE gui=none
+" hi Special            guifg=#e7f6da guibg=NONE gui=none
+
+hi htmlTag            guifg=#8060c4 guibg=NONE gui=NONE
+hi htmlEndTag         guifg=#8060c4 guibg=NONE gui=NONE
+hi htmlTagName        guifg=#8060c4 guibg=NONE gui=NONE
+hi htmlArg            guifg=#c48060 guibg=NONE gui=NONE
+
+hi phpParent          guifg=#f7f7f7 guibg=NONE gui=NONE
+hi phpOperator        guifg=#cccccc guibg=NONE gui=NONE
+hi phpRelation        guifg=#cccccc guibg=NONE gui=NONE
+hi phpComparison      guifg=#cccccc guibg=NONE gui=NONE
+hi phpVarSelector     guifg=#c40000 guibg=NONE gui=NONE
+hi phpSpecialFunction guifg=#00c4ff guibg=NONE gui=NONE
+
+hi cssIdentifier      guifg=#8000c4 guibg=NONE gui=NONE
+hi cssClassName       guifg=#c400c4 guibg=NONE gui=NONE
+hi cssTagName         guifg=#ff00c4 guibg=NONE gui=NONE
+hi cssBraces          guifg=#ffffff guibg=NONE gui=NONE
+hi cssColor           guifg=#c48060 guibg=NONE gui=NONE
+hi cssFunctionName    guifg=#00c4ff guibg=NONE gui=italic
+
+hi vimParenSep        guifg=#f7f7f7 guibg=NONE gui=NONE
+hi vimCommentTitle    guifg=#808080 guibg=NONE gui=italic
+
+hi treeHelp           guifg=#808080 guibg=NONE gui=NONE
+hi treePart           guifg=#666666 guibg=NONE gui=NONE
+hi treePartFile       guifg=#666666 guibg=NONE gui=bold
+hi treeDir            guifg=#ffffff guibg=NONE gui=bold
+hi treeDirSlash       guifg=#ffffff guibg=NONE gui=bold
+hi treeOpenable       guifg=#ffff00 guibg=NONE gui=bold
+hi treeClosable       guifg=#ffff00 guibg=NONE gui=bold
+hi treeUp             guifg=#ffff00 guibg=NONE gui=bold
