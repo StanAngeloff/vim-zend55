@@ -8,13 +8,13 @@ endif
 
 let g:colors_name='Zend55'
 
-hi CursorLine         guibg=#202020
-hi CursorColumn       guibg=#202020
-hi MatchParen         guibg=#888888 gui=bold
-hi Pmenu              guifg=#f6f3e8 guibg=#444444
-hi PmenuSel           guifg=#000000 guibg=#cae681
+hi CursorLine         guifg=NONE    guibg=#202020 gui=NONE
+hi CursorColumn       guifg=NONE    guibg=#202020 gui=NONE
+hi MatchParen         guifg=NONE    guibg=#888888 gui=bold
+hi Pmenu              guifg=#f6f3e8 guibg=#444444 gui=NONE
+hi PmenuSel           guifg=#000000 guibg=#cae681 gui=NONE
 
-hi Cursor             guifg=#000000 guibg=#ffffff gui=none
+hi Cursor             guifg=#000000 guibg=#ffffff gui=NONE
 hi Normal             guifg=#ffffff guibg=#000000 gui=NONE
 hi NonText            guifg=#808080 guibg=#000000 gui=NONE
 hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
@@ -29,19 +29,19 @@ hi Visual             guifg=NONE guibg=#004040 gui=NONE
 hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
 " hi SpecialKey         guifg=#808080 guibg=#343434 gui=NONE
 
-hi Delimiter          guifg=#ff0000 guibg=NONE gui=none
+hi Delimiter          guifg=#ff0000 guibg=NONE gui=NONE
 hi Comment            guifg=#808080 guibg=NONE gui=italic
 hi Todo               guifg=#808080 guibg=NONE gui=bold
-hi Constant           guifg=#00c4ff guibg=NONE gui=none
-hi String             guifg=#00c400 guibg=NONE gui=none
-hi Identifier         guifg=#c40000 guibg=NONE gui=none
-hi Function           guifg=#00c4ff guibg=NONE gui=none
-hi Type               guifg=#00c4ff guibg=NONE gui=none
+hi Constant           guifg=#00c4ff guibg=NONE gui=NONE
+hi String             guifg=#00c400 guibg=NONE gui=NONE
+hi Identifier         guifg=#c40000 guibg=NONE gui=NONE
+hi Function           guifg=#00c4ff guibg=NONE gui=NONE
+hi Type               guifg=#00c4ff guibg=NONE gui=NONE
 hi Statement          guifg=#00c4ff guibg=NONE gui=italic
-hi Keyword            guifg=#00c4ff guibg=NONE gui=none
+hi Keyword            guifg=#00c4ff guibg=NONE gui=NONE
 hi PreProc            guifg=#00c4ff guibg=NONE gui=italic
-hi Number             guifg=#ff0000 guibg=NONE gui=none
-" hi Special            guifg=#e7f6da guibg=NONE gui=none
+hi Number             guifg=#ff0000 guibg=NONE gui=NONE
+" hi Special            guifg=#e7f6da guibg=NONE gui=NONE
 
 hi htmlTag            guifg=#8060c4 guibg=NONE gui=NONE
 hi htmlEndTag         guifg=#8060c4 guibg=NONE gui=NONE
