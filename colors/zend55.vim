@@ -41,7 +41,7 @@ hi Statement          guifg=#00c4ff guibg=NONE    gui=italic
 hi Keyword            guifg=#00c4ff guibg=NONE    gui=NONE
 hi PreProc            guifg=#00c4ff guibg=NONE    gui=italic
 hi Number             guifg=#ff0000 guibg=NONE    gui=NONE
-" hi Special            guifg=#e7f6da guibg=NONE gui=NONE
+hi Special            guifg=#808080 guibg=NONE    gui=NONE
 
 hi htmlTag            guifg=#8060c4 guibg=NONE    gui=NONE
 hi htmlEndTag         guifg=#8060c4 guibg=NONE    gui=NONE
@@ -76,3 +76,7 @@ hi treeDirSlash       guifg=#ffffff guibg=NONE    gui=bold
 hi treeOpenable       guifg=#ffff00 guibg=NONE    gui=bold
 hi treeClosable       guifg=#ffff00 guibg=NONE    gui=bold
 hi treeUp             guifg=#ffff00 guibg=NONE    gui=bold
+
+hi diffRemoved        guifg=#ff7474 guibg=NONE    gui=NONE
+hi diffAdded          guifg=#74ff74 guibg=NONE    gui=NONE
+hi diffLine           guifg=#cccccc guibg=NONE    gui=NONE
