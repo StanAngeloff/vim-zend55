@@ -29,47 +29,50 @@ hi Visual             guifg=NONE guibg=#004040 gui=NONE
 hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
 " hi SpecialKey         guifg=#808080 guibg=#343434 gui=NONE
 
-hi Delimiter          guifg=#ff0000 guibg=NONE gui=NONE
-hi Comment            guifg=#808080 guibg=NONE gui=italic
-hi Todo               guifg=#808080 guibg=NONE gui=bold
-hi Constant           guifg=#00c4ff guibg=NONE gui=NONE
-hi String             guifg=#00c400 guibg=NONE gui=NONE
-hi Identifier         guifg=#c40000 guibg=NONE gui=NONE
-hi Function           guifg=#00c4ff guibg=NONE gui=NONE
-hi Type               guifg=#00c4ff guibg=NONE gui=NONE
-hi Statement          guifg=#00c4ff guibg=NONE gui=italic
-hi Keyword            guifg=#00c4ff guibg=NONE gui=NONE
-hi PreProc            guifg=#00c4ff guibg=NONE gui=italic
-hi Number             guifg=#ff0000 guibg=NONE gui=NONE
+hi Delimiter          guifg=#ff0000 guibg=NONE    gui=NONE
+hi Comment            guifg=#808080 guibg=NONE    gui=italic
+hi Todo               guifg=#808080 guibg=NONE    gui=bold
+hi Constant           guifg=#00c4ff guibg=NONE    gui=NONE
+hi String             guifg=#00c400 guibg=NONE    gui=NONE
+hi Identifier         guifg=#c40000 guibg=NONE    gui=NONE
+hi Function           guifg=#00c4ff guibg=NONE    gui=NONE
+hi Type               guifg=#00c4ff guibg=NONE    gui=NONE
+hi Statement          guifg=#00c4ff guibg=NONE    gui=italic
+hi Keyword            guifg=#00c4ff guibg=NONE    gui=NONE
+hi PreProc            guifg=#00c4ff guibg=NONE    gui=italic
+hi Number             guifg=#ff0000 guibg=NONE    gui=NONE
 " hi Special            guifg=#e7f6da guibg=NONE gui=NONE
 
-hi htmlTag            guifg=#8060c4 guibg=NONE gui=NONE
-hi htmlEndTag         guifg=#8060c4 guibg=NONE gui=NONE
-hi htmlTagName        guifg=#8060c4 guibg=NONE gui=NONE
-hi htmlArg            guifg=#c48060 guibg=NONE gui=NONE
+hi htmlTag            guifg=#8060c4 guibg=NONE    gui=NONE
+hi htmlEndTag         guifg=#8060c4 guibg=NONE    gui=NONE
+hi htmlTagName        guifg=#8060c4 guibg=NONE    gui=NONE
+hi htmlArg            guifg=#c48060 guibg=NONE    gui=NONE
+hi htmlSpecialChar    guifg=#00c4ff guibg=NONE    gui=bold
 
-hi phpParent          guifg=#f7f7f7 guibg=NONE gui=NONE
-hi phpOperator        guifg=#cccccc guibg=NONE gui=NONE
-hi phpRelation        guifg=#cccccc guibg=NONE gui=NONE
-hi phpComparison      guifg=#cccccc guibg=NONE gui=NONE
-hi phpVarSelector     guifg=#c40000 guibg=NONE gui=NONE
-hi phpSpecialFunction guifg=#00c4ff guibg=NONE gui=NONE
+hi phpParent          guifg=#f7f7f7 guibg=NONE    gui=NONE
+hi phpOperator        guifg=#cccccc guibg=NONE    gui=NONE
+hi phpRelation        guifg=#cccccc guibg=NONE    gui=NONE
+hi phpComparison      guifg=#cccccc guibg=NONE    gui=NONE
+hi phpVarSelector     guifg=#c40000 guibg=NONE    gui=NONE
+hi phpSpecialFunction guifg=#00c4ff guibg=NONE    gui=NONE
 
-hi cssIdentifier      guifg=#8000c4 guibg=NONE gui=NONE
-hi cssClassName       guifg=#c400c4 guibg=NONE gui=NONE
-hi cssTagName         guifg=#ff00c4 guibg=NONE gui=NONE
-hi cssBraces          guifg=#ffffff guibg=NONE gui=NONE
-hi cssColor           guifg=#c48060 guibg=NONE gui=NONE
-hi cssFunctionName    guifg=#00c4ff guibg=NONE gui=italic
+hi cssIdentifier      guifg=#8000c4 guibg=NONE    gui=NONE
+hi cssClassName       guifg=#c400c4 guibg=NONE    gui=NONE
+hi cssTagName         guifg=#ff00c4 guibg=NONE    gui=NONE
+hi cssBraces          guifg=#ffffff guibg=NONE    gui=NONE
+hi cssColor           guifg=#c48060 guibg=NONE    gui=NONE
+hi cssFunctionName    guifg=#00c4ff guibg=NONE    gui=italic
 
-hi vimParenSep        guifg=#f7f7f7 guibg=NONE gui=NONE
-hi vimCommentTitle    guifg=#808080 guibg=NONE gui=italic
+hi javaScript         guifg=#ffffff guibg=NONE    gui=NONE
 
-hi treeHelp           guifg=#808080 guibg=NONE gui=NONE
-hi treePart           guifg=#666666 guibg=NONE gui=NONE
-hi treePartFile       guifg=#666666 guibg=NONE gui=bold
-hi treeDir            guifg=#ffffff guibg=NONE gui=bold
-hi treeDirSlash       guifg=#ffffff guibg=NONE gui=bold
-hi treeOpenable       guifg=#ffff00 guibg=NONE gui=bold
-hi treeClosable       guifg=#ffff00 guibg=NONE gui=bold
-hi treeUp             guifg=#ffff00 guibg=NONE gui=bold
+hi vimParenSep        guifg=#f7f7f7 guibg=NONE    gui=NONE
+hi vimCommentTitle    guifg=#808080 guibg=NONE    gui=italic
+
+hi treeHelp           guifg=#808080 guibg=NONE    gui=NONE
+hi treePart           guifg=#666666 guibg=NONE    gui=NONE
+hi treePartFile       guifg=#666666 guibg=NONE    gui=bold
+hi treeDir            guifg=#ffffff guibg=NONE    gui=bold
+hi treeDirSlash       guifg=#ffffff guibg=NONE    gui=bold
+hi treeOpenable       guifg=#ffff00 guibg=NONE    gui=bold
+hi treeClosable       guifg=#ffff00 guibg=NONE    gui=bold
+hi treeUp             guifg=#ffff00 guibg=NONE    gui=bold
