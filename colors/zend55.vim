@@ -35,7 +35,7 @@ hi Todo               guifg=#808080 guibg=NONE gui=bold
 hi Constant           guifg=#00c4ff guibg=NONE gui=none
 hi String             guifg=#00c400 guibg=NONE gui=none
 hi Identifier         guifg=#c40000 guibg=NONE gui=none
-" hi Function           guifg=#ffff00 guibg=NONE gui=none
+hi Function           guifg=#00c4ff guibg=NONE gui=none
 hi Type               guifg=#00c4ff guibg=NONE gui=none
 hi Statement          guifg=#00c4ff guibg=NONE gui=italic
 hi Keyword            guifg=#00c4ff guibg=NONE gui=none
