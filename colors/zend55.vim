@@ -59,9 +59,20 @@ hi phpSpecialFunction guifg=#00c4ff guibg=NONE    gui=NONE
 hi cssIdentifier      guifg=#8000c4 guibg=NONE    gui=NONE
 hi cssClassName       guifg=#c400c4 guibg=NONE    gui=NONE
 hi cssTagName         guifg=#ff00c4 guibg=NONE    gui=NONE
+hi cssPseudoClass     guifg=#6600c4 guibg=NONE    gui=NONE
 hi cssBraces          guifg=#ffffff guibg=NONE    gui=NONE
 hi cssColor           guifg=#c48060 guibg=NONE    gui=NONE
 hi cssFunctionName    guifg=#00c4ff guibg=NONE    gui=italic
+hi cssInclude         guifg=#ffff00 guibg=NONE    gui=bold
+hi cssMedia           guifg=#ffff00 guibg=NONE    gui=bold
+
+hi sassId             guifg=#8000c4 guibg=NONE    gui=NONE
+hi sassIdChar         guifg=#8000c4 guibg=NONE    gui=NONE
+hi sassClass          guifg=#c400c4 guibg=NONE    gui=NONE
+hi sassInclude        guifg=#ffff00 guibg=NONE    gui=bold
+hi sassMedia          guifg=#ffff00 guibg=NONE    gui=bold
+hi sassAmpersand      guifg=#ffffff guibg=NONE    gui=italic
+hi sassMixing         guifg=#00c4ff guibg=NONE    gui=none
 
 hi javaScript         guifg=#ffffff guibg=NONE    gui=NONE
 
