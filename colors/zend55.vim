@@ -85,3 +85,8 @@ hi shDerefSimple      guifg=#c40000 guibg=NONE    gui=NONE
 hi shExprRegion       guifg=#ffffff guibg=NONE    gui=NONE
 hi shOperator         guifg=#cccccc guibg=NONE    gui=NONE
 hi shTestOpr          guifg=#cccccc guibg=NONE    gui=NONE
+
+hi coffeeAssignment   guifg=#ffffff guibg=NONE    gui=NONE
+hi coffeeVar          guifg=#ffffff guibg=NONE    gui=NONE
+hi coffeeObject       guifg=#ffffff guibg=NONE    gui=NONE
+hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
