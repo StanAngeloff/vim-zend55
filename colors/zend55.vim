@@ -13,6 +13,9 @@ hi CursorColumn       guifg=NONE    guibg=#202020 gui=NONE
 hi MatchParen         guifg=NONE    guibg=#888888 gui=bold
 hi Pmenu              guifg=#f6f3e8 guibg=#444444 gui=NONE
 hi PmenuSel           guifg=#000000 guibg=#cae681 gui=NONE
+hi TabLine            guifg=#cccccc guibg=#666666 gui=NONE
+hi TabLineSel         guifg=#ffffff guibg=#000000 gui=bold
+hi TabLineFill        guifg=NONE    guibg=#666666 gui=NONE
 
 hi Cursor             guifg=#000000 guibg=#ffffff gui=NONE
 hi Normal             guifg=#ffffff guibg=#000000 gui=NONE
