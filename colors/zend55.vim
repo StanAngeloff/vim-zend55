@@ -59,6 +59,7 @@ hi phpRelation        guifg=#cccccc guibg=NONE    gui=NONE
 hi phpComparison      guifg=#cccccc guibg=NONE    gui=NONE
 hi phpVarSelector     guifg=#c40000 guibg=NONE    gui=NONE
 hi phpSpecialFunction guifg=#00c4ff guibg=NONE    gui=NONE
+hi phpFunctions       guifg=#cccccc guibg=NONE    gui=NONE
 
 hi cssIdentifier      guifg=#8000c4 guibg=NONE    gui=NONE
 hi cssClassName       guifg=#c400c4 guibg=NONE    gui=NONE
