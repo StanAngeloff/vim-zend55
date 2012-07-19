@@ -28,6 +28,7 @@ hi VertSplit          guifg=#444444 guibg=#444444 gui=NONE
 hi Folded             guifg=#a0a0a0 guibg=#333333 gui=NONE
 hi vimFold            guifg=NONE    guibg=#000000 gui=bold
 hi FoldColumn         guifg=#666666 guibg=#000000 gui=NONE
+hi SignColumn         guifg=#666666 guibg=#000000 gui=NONE
 " hi Title              guifg=#f6f3e8 guibg=NONE  gui=bold
 hi Visual             guifg=NONE guibg=#004040 gui=NONE
 hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
