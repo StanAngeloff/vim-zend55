@@ -10,6 +10,7 @@ let g:colors_name='Zend55'
 
 hi CursorLine         guifg=NONE    guibg=#202020 gui=NONE
 hi CursorColumn       guifg=NONE    guibg=#202020 gui=NONE
+hi CursorLineNr       guifg=#a0a0a0 guibg=#202020 gui=NONE
 hi ColorColumn        guifg=NONE    guibg=#000030 gui=NONE
 hi MatchParen         guifg=NONE    guibg=#888888 gui=bold
 hi Pmenu              guifg=#f6f3e8 guibg=#444444 gui=NONE
