@@ -83,6 +83,10 @@ hi sassAmpersand      guifg=#ffffff guibg=NONE    gui=italic
 hi sassMixing         guifg=#00c4ff guibg=NONE    gui=none
 
 hi javaScript         guifg=#ffffff guibg=NONE    gui=NONE
+hi jsFuncCall         guifg=#ffffff guibg=NONE    gui=NONE
+hi jsIdentifier       guifg=#ffffff guibg=NONE    gui=NONE
+hi jsType             guifg=#00c4ff guibg=NONE    gui=NONE
+hi jsOperator         guifg=#cccccc guibg=NONE    gui=NONE
 
 hi vimParenSep        guifg=#f7f7f7 guibg=NONE    gui=NONE
 hi vimCommentTitle    guifg=#808080 guibg=NONE    gui=italic
