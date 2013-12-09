@@ -101,9 +101,10 @@ hi treeOpenable       guifg=#ffff00 guibg=NONE    gui=bold
 hi treeClosable       guifg=#ffff00 guibg=NONE    gui=bold
 hi treeUp             guifg=#ffff00 guibg=NONE    gui=bold
 
-hi DiffAdd           guifg=#74ff74 guibg=NONE gui=NONE
-hi DiffDelete        guifg=#ff7474 guibg=NONE gui=NONE
-hi DiffChange        guifg=#cccccc guibg=NONE gui=NONE
+hi DiffAdd           guifg=#74ff74 guibg=#1d401d gui=NONE
+hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
+hi DiffChange        guifg=#ccaa00 guibg=#333000 gui=NONE
+hi DiffText          guifg=#ffcc00 guibg=#333000 gui=bold
 
 hi shDerefSimple      guifg=#c40000 guibg=NONE    gui=NONE
 hi shExprRegion       guifg=#ffffff guibg=NONE    gui=NONE
