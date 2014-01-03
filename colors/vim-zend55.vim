@@ -48,6 +48,7 @@ hi Keyword            guifg=#00c4ff guibg=NONE    gui=NONE
 hi PreProc            guifg=#00c4ff guibg=NONE    gui=italic
 hi Number             guifg=#ff0000 guibg=NONE    gui=NONE
 hi Special            guifg=#808080 guibg=NONE    gui=NONE
+hi Operator           guifg=#cccccc guibg=NONE    gui=NONE
 
 hi htmlTag            guifg=#8060c4 guibg=NONE    gui=NONE
 hi htmlEndTag         guifg=#8060c4 guibg=NONE    gui=NONE
@@ -56,14 +57,10 @@ hi htmlArg            guifg=#c48060 guibg=NONE    gui=NONE
 hi htmlSpecialChar    guifg=#00c4ff guibg=NONE    gui=bold
 
 hi phpParent          guifg=#f7f7f7 guibg=NONE    gui=NONE
-hi phpOperator        guifg=#cccccc guibg=NONE    gui=NONE
-hi phpRelation        guifg=#cccccc guibg=NONE    gui=NONE
-hi phpComparison      guifg=#cccccc guibg=NONE    gui=NONE
-hi phpVarSelector     guifg=#c40000 guibg=NONE    gui=NONE
-hi phpSpecialFunction guifg=#00c4ff guibg=NONE    gui=NONE
 hi phpFunctions       guifg=#cccccc guibg=NONE    gui=NONE
 hi phpClasses         guifg=#cccccc guibg=NONE    gui=NONE
-hi phpNumber          guifg=#ff0000 guibg=NONE    gui=NONE
+
+hi def link phpVarSelector Identifier
 
 hi cssIdentifier      guifg=#8000c4 guibg=NONE    gui=NONE
 hi cssClassName       guifg=#c400c4 guibg=NONE    gui=NONE
