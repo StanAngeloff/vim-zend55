@@ -61,9 +61,6 @@ hi phpFunctions       guifg=#cccccc guibg=NONE    gui=NONE
 hi phpClasses         guifg=#cccccc guibg=NONE    gui=NONE
 hi phpCommentTitle    guifg=#a0a0a0 guibg=NONE    gui=italic
 
-hi def link phpVarSelector phpIdentifier
-hi def link phpDocParam phpComment
-hi def link phpDocIdentifier phpComment
 
 hi cssIdentifier      guifg=#8000c4 guibg=NONE    gui=NONE
 hi cssClassName       guifg=#c400c4 guibg=NONE    gui=NONE
