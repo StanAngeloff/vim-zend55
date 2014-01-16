@@ -102,6 +102,9 @@ hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
 hi DiffChange        guifg=#ccaa00 guibg=#333000 gui=NONE
 hi DiffText          guifg=#ffcc00 guibg=#333000 gui=bold
 
+hi def link diffAdded DiffAdd
+hi def link diffRemoved DiffDelete
+
 hi shDerefSimple      guifg=#c40000 guibg=NONE    gui=NONE
 hi shExprRegion       guifg=#ffffff guibg=NONE    gui=NONE
 hi shOperator         guifg=#cccccc guibg=NONE    gui=NONE
