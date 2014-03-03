@@ -30,10 +30,8 @@ hi Folded             guifg=#a0a0a0 guibg=#333333 gui=NONE
 hi vimFold            guifg=NONE    guibg=#000000 gui=bold
 hi FoldColumn         guifg=#666666 guibg=#000000 gui=NONE
 hi SignColumn         guifg=#666666 guibg=#000000 gui=NONE
-" hi Title              guifg=#f6f3e8 guibg=NONE  gui=bold
 hi Visual             guifg=NONE guibg=#004040 gui=NONE
 hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
-" hi SpecialKey         guifg=#808080 guibg=#343434 gui=NONE
 
 hi Delimiter          guifg=#ff0000 guibg=NONE    gui=NONE
 hi Comment            guifg=#808080 guibg=NONE    gui=italic
