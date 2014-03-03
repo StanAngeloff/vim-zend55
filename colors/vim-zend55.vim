@@ -114,3 +114,5 @@ hi coffeeAssignment   guifg=#ffffff guibg=NONE    gui=NONE
 hi coffeeVar          guifg=#ffffff guibg=NONE    gui=NONE
 hi coffeeObject       guifg=#ffffff guibg=NONE    gui=NONE
 hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
+
+hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
