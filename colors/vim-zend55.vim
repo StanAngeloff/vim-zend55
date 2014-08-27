@@ -87,13 +87,16 @@ hi vimParenSep        guifg=#f7f7f7 guibg=NONE    gui=NONE
 hi vimCommentTitle    guifg=#808080 guibg=NONE    gui=italic
 
 hi treeHelp           guifg=#808080 guibg=NONE    gui=NONE
-hi treePart           guifg=#666666 guibg=NONE    gui=NONE
-hi treePartFile       guifg=#666666 guibg=NONE    gui=bold
-hi treeDir            guifg=#ffffff guibg=NONE    gui=bold
-hi treeDirSlash       guifg=#ffffff guibg=NONE    gui=bold
-hi treeOpenable       guifg=#ffff00 guibg=NONE    gui=bold
-hi treeClosable       guifg=#ffff00 guibg=NONE    gui=bold
-hi treeUp             guifg=#ffff00 guibg=NONE    gui=bold
+hi treePart           guifg=#808080 guibg=NONE    gui=NONE
+hi treePartFile       guifg=#808080 guibg=NONE    gui=bold
+hi treeDir            guifg=#808080 guibg=NONE    gui=bold
+hi treeDirSlash       guifg=#808080 guibg=NONE    gui=bold
+hi treeOpenable       guifg=#808080 guibg=NONE    gui=bold
+hi treeClosable       guifg=#808080 guibg=NONE    gui=bold
+hi treeUp             guifg=#808080 guibg=NONE    gui=bold
+
+hi def link NERDTreeOpenable treeOpenable
+hi def link NERDTreeClosable treeClosable
 
 hi DiffAdd           guifg=#74ff74 guibg=#1d401d gui=NONE
 hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
