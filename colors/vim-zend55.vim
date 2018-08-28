@@ -21,7 +21,7 @@ hi TabLineFill        guifg=NONE    guibg=#666666 gui=NONE
 
 hi Cursor             guifg=#000000 guibg=#ffffff gui=NONE
 hi Normal             guifg=#ffffff guibg=#000000 gui=NONE
-hi NonText            guifg=#808080 guibg=#000000 gui=NONE
+hi NonText            guifg=#404040 guibg=NONE    gui=NONE
 hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
 hi StatusLine         guifg=#ffffff guibg=#444444 gui=NONE
 hi StatusLineNC       guifg=#ffffff guibg=#444444 gui=bold
@@ -91,12 +91,14 @@ hi treePart           guifg=#808080 guibg=NONE    gui=NONE
 hi treePartFile       guifg=#808080 guibg=NONE    gui=bold
 hi treeDir            guifg=#808080 guibg=NONE    gui=bold
 hi treeDirSlash       guifg=#808080 guibg=NONE    gui=bold
-hi treeOpenable       guifg=#808080 guibg=NONE    gui=bold
-hi treeClosable       guifg=#808080 guibg=NONE    gui=bold
-hi treeUp             guifg=#808080 guibg=NONE    gui=bold
+hi treeOpenable       guifg=#808080 guibg=NONE    gui=NONE
+hi treeClosable       guifg=#808080 guibg=NONE    gui=NONE
+hi treeUp             guifg=#808080 guibg=NONE    gui=NONE
 
 hi def link NERDTreeOpenable treeOpenable
 hi def link NERDTreeClosable treeClosable
+
+hi link NERDTreeFlags treeClosable
 
 hi DiffAdd           guifg=#74ff74 guibg=#1d401d gui=NONE
 hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
@@ -117,3 +119,6 @@ hi coffeeObject       guifg=#ffffff guibg=NONE    gui=NONE
 hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
 
 hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
+
+hi clear SpellBad
+hi SpellBad           guibg=#101010 gui=underline
