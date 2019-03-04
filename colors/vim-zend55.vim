@@ -8,7 +8,7 @@ endif
 
 let g:colors_name='Zend55'
 
-hi CursorLine         guifg=NONE    guibg=#202020 gui=NONE
+hi CursorLine         guifg=NONE    guibg=#303030 gui=NONE
 hi CursorColumn       guifg=NONE    guibg=#202020 gui=NONE
 hi CursorLineNr       guifg=#a0a0a0 guibg=#202020 gui=NONE
 hi ColorColumn        guifg=NONE    guibg=#202020 gui=NONE
@@ -20,16 +20,16 @@ hi TabLineSel         guifg=#ffffff guibg=#000000 gui=bold
 hi TabLineFill        guifg=NONE    guibg=#666666 gui=NONE
 
 hi Cursor             guifg=#000000 guibg=#ffffff gui=NONE
-hi Normal             guifg=#ffffff guibg=#000000 gui=NONE
+hi Normal             guifg=#ffffff guibg=NONE    gui=NONE
 hi NonText            guifg=#404040 guibg=NONE    gui=NONE
 hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
 hi StatusLine         guifg=#ffffff guibg=#444444 gui=NONE
 hi StatusLineNC       guifg=#ffffff guibg=#444444 gui=bold
 hi VertSplit          guifg=#444444 guibg=#444444 gui=NONE
 hi Folded             guifg=#a0a0a0 guibg=#333333 gui=NONE
-hi vimFold            guifg=NONE    guibg=#000000 gui=bold
-hi FoldColumn         guifg=#666666 guibg=#000000 gui=NONE
-hi SignColumn         guifg=#666666 guibg=#000000 gui=NONE
+hi vimFold            guifg=NONE    guibg=NONE    gui=bold
+hi FoldColumn         guifg=#666666 guibg=NONE    gui=NONE
+hi SignColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi Visual             guifg=NONE guibg=#004040 gui=NONE
 hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
 
@@ -120,5 +120,4 @@ hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
 
 hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
 
-hi clear SpellBad
-hi SpellBad           guibg=#101010 gui=underline
+hi SpellBad           guisp=#c03010 gui=undercurl
