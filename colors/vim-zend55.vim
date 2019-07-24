@@ -54,6 +54,14 @@ hi htmlTagName        guifg=#8060c4 guibg=NONE    gui=NONE
 hi htmlArg            guifg=#c48060 guibg=NONE    gui=NONE
 hi htmlSpecialChar    guifg=#00c4ff guibg=NONE    gui=bold
 
+hi link htmlTagN htmlTagName
+
+hi link xmlTag htmlTag
+hi link xmlTagName htmlTagName
+hi link xmlAttrib htmlArg
+hi link xmlEqual htmlTag
+hi link xmlEndTag htmlEndTag
+
 hi phpParent          guifg=#f7f7f7 guibg=NONE    gui=NONE
 hi phpFunctions       guifg=#cccccc guibg=NONE    gui=NONE
 hi phpClasses         guifg=#cccccc guibg=NONE    gui=NONE
