@@ -129,3 +129,79 @@ hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
 hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
 
 hi SpellBad           guisp=#c03010 gui=undercurl cterm=undercurl
+
+" Tree-sitter
+" -----------
+
+"TSAnnotation
+"TSAttribute
+"TSBoolean
+"TSCharacter
+"TSComment
+"TSConditional
+"TSConstBuiltin
+"TSConstMacro
+"TSConstant
+hi def link TSConstructor Normal
+"TSDanger
+"TSEmphasis
+"TSEnviroment
+"TSEnviromentName
+"TSError
+"TSException
+"TSField
+"TSFloat
+"TSFuncBuiltin
+"TSFuncMacro
+"TSFunction
+"TSInclude
+"TSKeyword
+"TSKeywordFunction
+"TSKeywordOperator
+"TSLabel
+"TSLiteral
+"TSMath
+"TSMethod
+"TSNamespace
+"TSNone
+"TSNote
+"TSNumber
+"TSOperator
+"TSParameter
+"TSParameterReference
+"TSProperty
+hi def link TSPunctBracket Normal
+hi def link TSPunctDelimiter Normal
+hi def link TSPunctSpecial Special
+"TSRepeat
+"TSStrike
+"TSString
+"TSStringEscape
+"TSStringRegex
+"TSStrong
+"TSSymbol
+hi def link TSTag htmlTag
+hi def link TSTagDelimiter htmlEndTag
+"TSText
+"TSTextReference
+"TSTitle
+"TSType
+"TSTypeBuiltin
+hi TSURI guifg=#00c400 guibg=NONE gui=underline
+"TSUnderline
+hi def link TSVariable Identifier
+hi def link TSVariableBuiltin Identifier
+"TSWarning
+
+" ### PHP
+"
+hi def link phpTSMethod Normal
+
+" ### HTML
+"
+hi def link htmlTSProperty htmlArg
+
+" ### CSS
+"
+hi def link cssTSType cssTagName
+hi def link cssTSProperty Constant
