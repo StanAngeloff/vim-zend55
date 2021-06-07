@@ -38,7 +38,7 @@ hi Comment            guifg=#808080 guibg=NONE    gui=italic
 hi Todo               guifg=#808080 guibg=NONE    gui=bold
 hi Constant           guifg=#00c4ff guibg=NONE    gui=NONE
 hi String             guifg=#00c400 guibg=NONE    gui=NONE
-hi Identifier         guifg=#c40000 guibg=NONE    gui=NONE
+hi Identifier         guifg=#d30000 guibg=NONE    gui=NONE
 hi Function           guifg=#00c4ff guibg=NONE    gui=NONE
 hi Type               guifg=#00c4ff guibg=NONE    gui=NONE
 hi Statement          guifg=#00c4ff guibg=NONE    gui=italic
@@ -128,4 +128,4 @@ hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
 
 hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
 
-hi SpellBad           guisp=#c03010 gui=undercurl
+hi SpellBad           guisp=#c03010 gui=undercurl cterm=undercurl
