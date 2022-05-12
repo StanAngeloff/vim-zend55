@@ -133,75 +133,22 @@ hi SpellBad           guisp=#c03010 gui=undercurl cterm=undercurl
 " Tree-sitter
 " -----------
 
-"TSAnnotation
-"TSAttribute
-"TSBoolean
-"TSCharacter
-"TSComment
-"TSConditional
-"TSConstBuiltin
-"TSConstMacro
-"TSConstant
-hi def link TSConstructor Normal
-"TSDanger
-"TSEmphasis
-"TSEnviroment
-"TSEnviromentName
-"TSError
-"TSException
-"TSField
-"TSFloat
-"TSFuncBuiltin
-"TSFuncMacro
-"TSFunction
-"TSInclude
-"TSKeyword
-"TSKeywordFunction
-"TSKeywordOperator
-"TSLabel
-"TSLiteral
-"TSMath
-"TSMethod
-"TSNamespace
-"TSNone
-"TSNote
-"TSNumber
-"TSOperator
-"TSParameter
-"TSParameterReference
-"TSProperty
-hi def link TSPunctBracket Normal
-hi def link TSPunctDelimiter Normal
-hi def link TSPunctSpecial Special
-"TSRepeat
-"TSStrike
-"TSString
-"TSStringEscape
-"TSStringRegex
-"TSStrong
-"TSSymbol
+hi          TSVariable           guifg=#ffffff
+hi def link TSConstructor        Function
+hi def link TSKeywordReturn      Statement
+hi def link TSParameter          TSVariable
+hi def link TSProperty           Normal
+hi def link TSPunctBracket       vimParenSep
+hi def link TSPunctDelimiter     vimParenSep
+hi def link TSPunctSpecial       vimParenSep
+hi def link TSVariableBuiltin    Special
+
 hi def link TSTag htmlTag
-hi def link TSTagDelimiter htmlEndTag
-"TSText
-"TSTextReference
-"TSTitle
-"TSType
-"TSTypeBuiltin
-hi TSURI guifg=#00c400 guibg=NONE gui=underline
-"TSUnderline
-hi def link TSVariable Identifier
-hi def link TSVariableBuiltin Identifier
-"TSWarning
+hi def link TSTagAttribute       htmlArg
+hi def link TSTagDelimiter       htmlEndTag
 
-" ### PHP
-"
-hi def link phpTSMethod Normal
+hi def link javascriptTSRepeat   jsOperator
 
-" ### HTML
-"
-hi def link htmlTSProperty htmlArg
-
-" ### CSS
-"
-hi def link cssTSType cssTagName
-hi def link cssTSProperty Constant
+hi def link phpTSVariable        Identifier
+hi def link phpTSMethod          Normal
+hi def link phpTSVariableBuiltin Type
