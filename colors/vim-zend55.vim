@@ -128,7 +128,7 @@ hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
 
 hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
 
-hi SpellBad           guisp=#c03010 gui=undercurl cterm=undercurl
+hi SpellBad           guisp=#c01020 gui=undercurl
 
 " Tree-sitter
 " -----------
