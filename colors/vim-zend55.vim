@@ -133,6 +133,7 @@ hi SpellBad           guisp=#c01020 gui=undercurl
 " Tree-sitter
 " -----------
 
+hi          TSError              guibg=#c01020 gui=undercurl
 hi          TSVariable           guifg=#ffffff
 hi def link TSConstructor        Function
 hi def link TSKeywordReturn      Statement
@@ -152,3 +153,5 @@ hi def link javascriptTSRepeat   jsOperator
 hi def link phpTSVariable        Identifier
 hi def link phpTSMethod          Normal
 hi def link phpTSVariableBuiltin Type
+
+hi def link bashTSConstant       Identifier
