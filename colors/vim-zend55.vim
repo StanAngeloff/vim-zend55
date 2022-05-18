@@ -31,7 +31,7 @@ hi vimFold            guifg=NONE    guibg=NONE    gui=bold
 hi FoldColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi SignColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi Visual             guifg=NONE guibg=#004040 gui=NONE
-hi Search             guifg=NONE guibg=#aaaa00 gui=NONE
+hi Search             guifg=#101020 guibg=#aaaa00 gui=NONE
 
 hi Delimiter          guifg=#ff0000 guibg=NONE    gui=NONE
 hi Comment            guifg=#808080 guibg=NONE    gui=italic
