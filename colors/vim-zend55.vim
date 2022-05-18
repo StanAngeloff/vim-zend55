@@ -106,8 +106,6 @@ hi treeUp             guifg=#808080 guibg=NONE    gui=NONE
 hi def link NERDTreeOpenable treeOpenable
 hi def link NERDTreeClosable treeClosable
 
-hi link NERDTreeFlags treeClosable
-
 hi DiffAdd           guifg=#74ff74 guibg=#1d401d gui=NONE
 hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
 hi DiffChange        guifg=#ccaa00 guibg=#333000 gui=NONE
