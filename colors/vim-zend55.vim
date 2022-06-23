@@ -13,8 +13,10 @@ hi CursorColumn       guifg=NONE    guibg=#202020 gui=NONE
 hi CursorLineNr       guifg=#a0a0a0 guibg=#202020 gui=NONE
 hi ColorColumn        guifg=NONE    guibg=#202020 gui=NONE
 hi MatchParen         guifg=NONE    guibg=#888888 gui=bold
-hi Pmenu              guifg=#f6f3e8 guibg=#444444 gui=NONE
-hi PmenuSel           guifg=#000000 guibg=#cae681 gui=NONE
+hi Pmenu              guifg=#f6f6f8 guibg=#111122 gui=NONE
+hi PmenuSel           guifg=#ffffff guibg=#333388 gui=NONE
+hi FloatBorder        guifg=#333388 guibg=#000000 gui=NONE
+hi NormalFloat                      guibg=#000000 gui=NONE
 hi TabLine            guifg=#cccccc guibg=#666666 gui=NONE
 hi TabLineSel         guifg=#ffffff guibg=#000000 gui=bold
 hi TabLineFill        guifg=NONE    guibg=#666666 gui=NONE
