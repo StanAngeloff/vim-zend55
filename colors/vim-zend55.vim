@@ -29,7 +29,7 @@ hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
 hi StatusLine         guifg=#ffffff guibg=#444444 gui=NONE
 hi StatusLineNC       guifg=#ffffff guibg=#444444 gui=bold
 hi VertSplit          guifg=#444444 guibg=#444444 gui=NONE
-hi Folded             guifg=#a0a0a0 guibg=#333333 gui=NONE
+hi Folded             guifg=#a0a0a0 guibg=#360066 gui=NONE
 hi vimFold            guifg=NONE    guibg=NONE    gui=bold
 hi FoldColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi SignColumn         guifg=#666666 guibg=NONE    gui=NONE
