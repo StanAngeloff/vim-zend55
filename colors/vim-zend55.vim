@@ -134,25 +134,26 @@ hi SpellBad           guisp=#c01020 gui=undercurl
 " Tree-sitter
 " -----------
 
-hi          TSError              guibg=#c01020 gui=undercurl
-hi          TSVariable           guifg=#ffffff
-hi def link TSConstructor        Function
-hi def link TSKeywordReturn      Statement
-hi def link TSParameter          TSVariable
-hi def link TSProperty           Normal
-hi def link TSPunctBracket       vimParenSep
-hi def link TSPunctDelimiter     vimParenSep
-hi def link TSPunctSpecial       vimParenSep
-hi def link TSVariableBuiltin    Special
+hi          @error                     guibg=#c01020 gui=undercurl
+hi          @variable                  guifg=#ffffff
+hi          @field                     guifg=#ffffff
+hi def link @constructor               Function
+hi def link @keyword.return            Statement
+hi def link @parameter                 @variable
+hi def link @property                  Normal
+hi def link @punctuation.bracket       vimParenSep
+hi def link @punctuation.delimiter     vimParenSep
+hi def link @punctuation.special       vimParenSep
+hi def link @variable.builtin          Special
 
-hi def link TSTag htmlTag
-hi def link TSTagAttribute       htmlArg
-hi def link TSTagDelimiter       htmlEndTag
+hi def link @tag                       htmlTag
+hi def link @tag.attribute             htmlArg
+hi def link @tag.delimiter             htmlEndTag
 
-hi def link javascriptTSRepeat   jsOperator
+hi def link @repeat.javascript         jsOperator
 
-hi def link phpTSVariable        Identifier
-hi def link phpTSMethod          Normal
-hi def link phpTSVariableBuiltin Type
+hi def link @variable.php              Identifier
+hi def link @method.php                Normal
+hi def link @variable.builtin.php      Type
 
-hi def link bashTSConstant       Identifier
+hi def link @constant.bash             Identifier
