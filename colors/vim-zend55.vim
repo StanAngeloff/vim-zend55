@@ -24,6 +24,7 @@ hi TabLineFill        guifg=NONE    guibg=#666666 gui=NONE
 hi Cursor             guifg=#000000 guibg=#ffffff gui=NONE
 hi Normal             guifg=#ffffff guibg=NONE    gui=NONE
 hi NonText            guifg=#8800ff guibg=NONE    gui=NONE
+hi Conceal            guifg=#8800ff guibg=NONE    gui=NONE
 hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
 hi StatusLine         guifg=#ffffff guibg=#444444 gui=NONE
 hi StatusLineNC       guifg=#ffffff guibg=#444444 gui=bold
