@@ -33,7 +33,7 @@ hi Folded             guifg=#a0a0a0 guibg=#360066 gui=NONE
 hi vimFold            guifg=NONE    guibg=NONE    gui=bold
 hi FoldColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi SignColumn         guifg=#666666 guibg=NONE    gui=NONE
-hi Visual             guifg=NONE guibg=#004040 gui=NONE
+hi Visual             guifg=NONE    guibg=#004040 gui=NONE
 hi Search             guifg=#101020 guibg=#aaaa00 gui=NONE
 
 hi Delimiter          guifg=#ff0000 guibg=NONE    gui=NONE
@@ -131,10 +131,32 @@ hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
 
 hi SpellBad           guisp=#c01020 gui=undercurl
 
+hi CSVColumnHeaderOdd   guifg=#ff00c4 guibg=NONE    gui=bold
+hi CSVColumnHeaderEven  guifg=#c400c4 guibg=NONE    gui=bold
+
+hi CSVColumnOdd         guifg=#ffffff guibg=NONE    gui=NONE
+hi CSVColumnEven        guifg=#cccccc guibg=NONE    gui=NONE
+
+hi TrollStopper guibg=#6666aa
+
+" LSP
+" ---
+
+hi DiagnosticError           guifg=#995555 gui=italic
+hi DiagnosticWarn            guifg=#887755 gui=italic
+hi DiagnosticHint            guifg=#999999 
+hi DiagnosticUnderlineError  guisp=#880000 gui=underline
+hi DiagnosticUnderlineWarn   guisp=#886600 gui=underline
+hi DiagnosticUnderlineHint   guisp=#999999 gui=underline
+hi DiagnosticUnnecessary     guifg=#666666 gui=strikethrough
+
+"hi DiagnosticInfo            guifg=LightBlue
+"hi DiagnosticUnderlineInfo   guisp=LightBlue  gui=underline
+
 " Tree-sitter
 " -----------
 
-hi          @error                     guibg=#c01020 gui=undercurl
+hi          @error                     guibg=#440000 gui=underdashed
 hi          @variable                  guifg=#ffffff
 hi          @field                     guifg=#ffffff
 hi def link @constructor               Function
@@ -157,3 +179,28 @@ hi def link @method.php                Normal
 hi def link @variable.builtin.php      Type
 
 hi def link @constant.bash             Identifier
+
+" https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316
+lua <<EOF
+
+local links = {
+  ['@lsp.type.namespace'] = '@namespace',
+  ['@lsp.type.type'] = '@type',
+  ['@lsp.type.class'] = '@type',
+  ['@lsp.type.enum'] = '@type',
+  ['@lsp.type.interface'] = '@type',
+  ['@lsp.type.struct'] = '@structure',
+  ['@lsp.type.parameter'] = '@parameter',
+  ['@lsp.type.variable'] = '@variable',
+  ['@lsp.type.property'] = '@property',
+  ['@lsp.type.enumMember'] = '@constant',
+  ['@lsp.type.function'] = '@function',
+  ['@lsp.type.method'] = '@method',
+  ['@lsp.type.macro'] = '@macro',
+  ['@lsp.type.decorator'] = '@function',
+}
+for newgroup, oldgroup in pairs(links) do
+  vim.api.nvim_set_hl(0, newgroup, { link = oldgroup, default = true })
+end
+
+EOF
