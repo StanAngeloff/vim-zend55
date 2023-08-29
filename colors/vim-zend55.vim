@@ -108,6 +108,7 @@ hi treeUp             guifg=#808080 guibg=NONE    gui=NONE
 
 hi def link NERDTreeOpenable treeOpenable
 hi def link NERDTreeClosable treeClosable
+hi          NERDTreeFlags    guifg=#666666
 
 hi DiffAdd           guifg=#74ff74 guibg=#1d401d gui=NONE
 hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
@@ -129,7 +130,8 @@ hi coffeeInterpDelim  guifg=#c40000 guibg=NONE    gui=NONE
 
 hi CtrlPMatch         guifg=NONE guibg=#aaaa00 gui=NONE
 
-hi SpellBad           guisp=#c01020 gui=undercurl
+"hi SpellBad           guisp=#c01020 gui=undercurl
+ hi SpellBad           guisp=#801020 gui=undercurl
 
 hi CSVColumnHeaderOdd   guifg=#ff00c4 guibg=NONE    gui=bold
 hi CSVColumnHeaderEven  guifg=#c400c4 guibg=NONE    gui=bold
@@ -142,21 +144,29 @@ hi TrollStopper guibg=#6666aa
 " LSP
 " ---
 
-hi DiagnosticError           guifg=#995555 gui=italic
-hi DiagnosticWarn            guifg=#887755 gui=italic
-hi DiagnosticHint            guifg=#999999 
-hi DiagnosticUnderlineError  guisp=#880000 gui=underline
-hi DiagnosticUnderlineWarn   guisp=#886600 gui=underline
-hi DiagnosticUnderlineHint   guisp=#999999 gui=underline
-hi DiagnosticUnnecessary     guifg=#666666 gui=strikethrough
+sign define DiagnosticSignError text=✱ texthl=DiagnosticSignError linehl=DiagnosticErrorLineHl
+hi DiagnosticError           guifg=#c01020 gui=italic
+hi DiagnosticUnderlineError  guisp=#c01020 gui=underline
+hi DiagnosticErrorLineHl     guibg=#201010
 
-"hi DiagnosticInfo            guifg=LightBlue
-"hi DiagnosticUnderlineInfo   guisp=LightBlue  gui=underline
+sign define DiagnosticSignWarn text=∗ texthl=DiagnosticSignWarn linehl=DiagnosticWarnLineHl
+hi DiagnosticWarn            guifg=#ffcc00 gui=italic
+hi DiagnosticUnderlineWarn   guisp=#ffcc00 gui=underline
+hi DiagnosticWarnLineHl      guibg=#202010
+
+sign define DiagnosticSignHint text=٭ texthl=DiagnosticSignHint
+hi DiagnosticHint            guifg=#66777f
+hi DiagnosticUnderlineHint   guisp=#66777f gui=underline
+
+hi DiagnosticUnnecessary     guifg=#66777f gui=NONE
+
+hi DiagnosticInfo            guifg=#ff00ff
+hi DiagnosticUnderlineInfo   guisp=#ff00ff gui=underline
 
 " Tree-sitter
 " -----------
 
-hi          @error                     guibg=#440000 gui=underdashed
+hi          @error                     guisp=#c01020 gui=undercurl
 hi          @variable                  guifg=#ffffff
 hi          @field                     guifg=#ffffff
 hi def link @constructor               Function
