@@ -6,11 +6,12 @@ if exists('syntax_on')
   syntax reset
 endif
 
+source $VIMRUNTIME/colors/vim.lua " Nvim: revert to Vim default color scheme
+
 let g:colors_name='Zend55'
 
 hi CursorLine         guifg=NONE    guibg=#303030 gui=NONE
 hi CursorColumn       guifg=NONE    guibg=#202020 gui=NONE
-hi CursorLineNr       guifg=#a0a0a0 guibg=#202020 gui=NONE
 hi ColorColumn        guifg=NONE    guibg=#202020 gui=NONE
 hi MatchParen         guifg=NONE    guibg=#888888 gui=bold
 hi Pmenu              guifg=#f6f6f8 guibg=#111122 gui=NONE
@@ -25,7 +26,11 @@ hi Cursor             guifg=#000000 guibg=#ffffff gui=NONE
 hi Normal             guifg=#ffffff guibg=NONE    gui=NONE
 hi NonText            guifg=#8800ff guibg=NONE    gui=NONE
 hi Conceal            guifg=#8800ff guibg=NONE    gui=NONE
-hi LineNr             guifg=#666666 guibg=NONE    gui=NONE
+hi LineNr             guifg=#444444 guibg=NONE    gui=NONE
+hi CursorLineNr       guifg=#444444 guibg=#202020 gui=NONE
+hi CursorLineSign     guifg=NONE    guibg=#202020 gui=NONE
+hi LineNrAbove        guifg=#666666 guibg=NONE    gui=NONE
+hi LineNrBelow        guifg=#666666 guibg=NONE    gui=NONE
 hi StatusLine         guifg=#ffffff guibg=#444444 gui=NONE
 hi StatusLineNC       guifg=#ffffff guibg=#444444 gui=bold
 hi VertSplit          guifg=#444444 guibg=#444444 gui=NONE
@@ -35,6 +40,7 @@ hi FoldColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi SignColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi Visual             guifg=NONE    guibg=#004040 gui=NONE
 hi Search             guifg=#101020 guibg=#aaaa00 gui=NONE
+hi! link CurSearch    Search
 
 hi Delimiter          guifg=#ff0000 guibg=NONE    gui=NONE
 hi Comment            guifg=#808080 guibg=NONE    gui=italic
@@ -48,6 +54,8 @@ hi Statement          guifg=#00c4ff guibg=NONE    gui=italic
 hi Keyword            guifg=#00c4ff guibg=NONE    gui=NONE
 hi PreProc            guifg=#00c4ff guibg=NONE    gui=italic
 hi Number             guifg=#ff0000 guibg=NONE    gui=NONE
+hi Boolean            guifg=#00c4ff guibg=NONE    gui=NONE
+hi Label              guifg=#00ffc4 guibg=NONE    gui=NONE
 hi Special            guifg=#808080 guibg=NONE    gui=NONE
 hi Operator           guifg=#cccccc guibg=NONE    gui=NONE
 
@@ -108,7 +116,9 @@ hi treeUp             guifg=#808080 guibg=NONE    gui=NONE
 
 hi def link NERDTreeOpenable treeOpenable
 hi def link NERDTreeClosable treeClosable
-hi          NERDTreeFlags    guifg=#666666
+
+hi Directory         guifg=#00ffff
+hi NERDTreeFlags     guifg=#008888
 
 hi DiffAdd           guifg=#74ff74 guibg=#1d401d gui=NONE
 hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
@@ -184,11 +194,64 @@ hi def link @tag.delimiter             htmlEndTag
 
 hi def link @repeat.javascript         jsOperator
 
-hi def link @variable.php              Identifier
-hi def link @method.php                Normal
-hi def link @variable.builtin.php      Type
-
 hi def link @constant.bash             Identifier
+
+" See https://github.com/nvim-treesitter/nvim-treesitter/commit/1ae9b0e4558fe7868f8cda2db65239cfb14836d0
+" tree-sitter "standard capture names"
+hi link @variable.parameter         @parameter
+hi link @variable.member            @field
+hi link @module                     @namespace
+hi link @number.float               @float
+hi link @string.special.symbol      @symbol
+hi link @string.regexp              @string.regex
+hi link @markup.strong              @text.strong
+hi link @markup.italic              @text.emphasis
+hi link @markup.underline           @text.underline
+hi link @markup.strikethrough       @text.strike
+hi link @markup.heading             @text.title
+hi link @markup.quote               @text.quote
+hi link @markup.link.url            @text.uri
+hi link @markup.math                @text.math
+hi link @markup.environment         @text.environment
+hi link @markup.environment.name    @text.environment.name
+hi link @markup.link                @text.reference
+hi link @markup.raw                 @text.literal
+hi link @markup.raw.block           @text.literal.block
+hi link @markup.link.label          @string.special
+hi link @markup.list                @punctuation.special
+
+" Helix captures
+hi link @function.method            @method
+hi link @function.method.call       @method.call
+hi link @comment.todo               @text.todo
+hi link @comment.error              @text.danger
+hi link @comment.warning            @text.warning
+hi link @comment.hint               @text.note
+hi link @comment.info               @text.note
+hi link @comment.note               @text.note
+hi link @comment.ok                 @text.note
+hi link @diff.plus                  @text.diff.add
+hi link @diff.minus                 @text.diff.delete
+hi link @diff.delta                 @text.diff.change
+hi link @string.special.url         @text.uri
+hi link @keyword.directive          @preproc
+hi link @keyword.storage            @storageclass
+hi link @keyword.directive          @define
+hi link @keyword.conditional        @conditional
+hi link @keyword.debug              @debug
+hi link @keyword.exception          @exception
+hi link @keyword.import             @include
+hi link @keyword.repeat             @repeat
+
+" PHP
+hi def link @variable.php               Identifier
+hi def link @variable.builtin.php       Type
+
+hi def link @module.php                 @type
+hi def link @method.php                 Normal
+hi def link @function.call.php          @method.php
+hi def link @function.method.php        @method.php
+hi def link @function.method.call.php   @method.php
 
 " https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316
 lua <<EOF
