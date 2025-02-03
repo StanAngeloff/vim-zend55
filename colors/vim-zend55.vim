@@ -253,6 +253,18 @@ hi def link @function.call.php          @method.php
 hi def link @function.method.php        @method.php
 hi def link @function.method.call.php   @method.php
 
+" nerdtree-git-plugin
+hi NERDTreeGitStatusUntracked guifg=#666666
+hi NERDTreeGitStatusStaged    guifg=#74ff74
+hi NERDTreeGitStatusModified  guifg=#ccaa00
+hi NERDTreeGitStatusUnmerged  guifg=#ff0000
+hi NERDTreeGitStatusRenamed   guifg=#ffcc00
+hi NERDTreeGitStatusDeleted   guifg=#ff7474
+hi NERDTreeGitStatusIgnored   guifg=#8800ff
+hi NERDTreeGitStatusClean     guifg=#333333
+
+hi! def link NERDTreeGitStatusDirty NERDTreeGitStatusModified
+
 " https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316
 lua <<EOF
 
