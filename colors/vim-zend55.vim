@@ -263,6 +263,12 @@ hi NERDTreeGitStatusDeleted   guifg=#ff7474
 hi NERDTreeGitStatusIgnored   guifg=#8800ff
 hi NERDTreeGitStatusClean     guifg=#333333
 
+" vim-gitgutter
+hi def link GitGutterAdd DiffAdd
+hi def link GitGutterChange DiffChange
+hi def link GitGutterDelete DiffDelete
+hi def link GitGutterChangeDelete DiffChange
+
 hi! def link NERDTreeGitStatusDirty NERDTreeGitStatusModified
 
 " https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316
