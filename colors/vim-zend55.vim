@@ -40,7 +40,7 @@ hi FoldColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi SignColumn         guifg=#666666 guibg=NONE    gui=NONE
 hi Visual             guifg=NONE    guibg=#004040 gui=NONE
 hi Search             guifg=#101020 guibg=#aaaa00 gui=NONE
-hi! link CurSearch    Search
+hi link CurSearch     Search
 
 hi Delimiter          guifg=#ff0000 guibg=NONE    gui=NONE
 hi Comment            guifg=#808080 guibg=NONE    gui=italic
@@ -52,10 +52,11 @@ hi Function           guifg=#00c4ff guibg=NONE    gui=NONE
 hi Type               guifg=#00c4ff guibg=NONE    gui=NONE
 hi Statement          guifg=#00c4ff guibg=NONE    gui=italic
 hi Keyword            guifg=#00c4ff guibg=NONE    gui=NONE
+hi link Conditional   Keyword
+hi link Exception     Keyword
 hi PreProc            guifg=#00c4ff guibg=NONE    gui=italic
 hi Number             guifg=#ff0000 guibg=NONE    gui=NONE
 hi Boolean            guifg=#00c4ff guibg=NONE    gui=NONE
-hi Label              guifg=#00ffc4 guibg=NONE    gui=NONE
 hi Special            guifg=#808080 guibg=NONE    gui=NONE
 hi Operator           guifg=#cccccc guibg=NONE    gui=NONE
 
@@ -114,8 +115,8 @@ hi treeOpenable       guifg=#808080 guibg=NONE    gui=NONE
 hi treeClosable       guifg=#808080 guibg=NONE    gui=NONE
 hi treeUp             guifg=#808080 guibg=NONE    gui=NONE
 
-hi def link NERDTreeOpenable treeOpenable
-hi def link NERDTreeClosable treeClosable
+hi link NERDTreeOpenable treeOpenable
+hi link NERDTreeClosable treeClosable
 
 hi Directory         guifg=#00ffff
 hi NERDTreeFlags     guifg=#008888
@@ -125,8 +126,8 @@ hi DiffDelete        guifg=#ff7474 guibg=#401d1d gui=NONE
 hi DiffChange        guifg=#ccaa00 guibg=#333000 gui=NONE
 hi DiffText          guifg=#ffcc00 guibg=#333000 gui=bold
 
-hi def link diffAdded DiffAdd
-hi def link diffRemoved DiffDelete
+hi link diffAdded DiffAdd
+hi link diffRemoved DiffDelete
 
 hi shDerefSimple      guifg=#c40000 guibg=NONE    gui=NONE
 hi shExprRegion       guifg=#ffffff guibg=NONE    gui=NONE
@@ -176,25 +177,34 @@ hi DiagnosticUnderlineInfo   guisp=#ff00ff gui=underline
 " Tree-sitter
 " -----------
 
-hi          @error                     guisp=#c01020 gui=undercurl
-hi          @variable                  guifg=#ffffff
-hi          @field                     guifg=#ffffff
-hi def link @constructor               Function
-hi def link @keyword.return            Statement
-hi def link @parameter                 @variable
-hi def link @property                  Normal
-hi def link @punctuation.bracket       vimParenSep
-hi def link @punctuation.delimiter     vimParenSep
-hi def link @punctuation.special       vimParenSep
-hi def link @variable.builtin          Special
+hi      @error                     guisp=#c01020 gui=undercurl
+hi      @variable                  guifg=#ffffff
+hi      @field                     guifg=#ffffff
+hi link @constructor               Function
+hi link @conditional               Conditional
+hi link @exception                 Exception
+hi link @include                   Include
+hi link @repeat                    Keyword
+hi link @keyword.return            Statement
+hi link @parameter                 @variable
+hi link @property                  Normal
+hi link @punctuation.bracket       vimParenSep
+hi link @punctuation.delimiter     vimParenSep
+hi link @punctuation.special       vimParenSep
+hi link @type.builtin              Type
+hi      @variable.builtin          guifg=#cccccc guibg=NONE    gui=NONE
 
-hi def link @tag                       htmlTag
-hi def link @tag.attribute             htmlArg
-hi def link @tag.delimiter             htmlEndTag
+hi link @tag                       htmlTag
+hi link @tag.builtin               htmlTag
+hi link @tag.attribute             htmlArg
+hi link @tag.delimiter             htmlEndTag
 
-hi def link @repeat.javascript         jsOperator
+hi      @text.literal              guifg=#808080 guibg=NONE    gui=NONE
+"hi link @text.literal.block       Comment
 
-hi def link @constant.bash             Identifier
+hi link @repeat.javascript         jsOperator
+
+hi link @constant.bash             Identifier
 
 " See https://github.com/nvim-treesitter/nvim-treesitter/commit/1ae9b0e4558fe7868f8cda2db65239cfb14836d0
 " tree-sitter "standard capture names"
@@ -204,21 +214,9 @@ hi link @module                     @namespace
 hi link @number.float               @float
 hi link @string.special.symbol      @symbol
 hi link @string.regexp              @string.regex
-hi link @markup.strong              @text.strong
-hi link @markup.italic              @text.emphasis
-hi link @markup.underline           @text.underline
-hi link @markup.strikethrough       @text.strike
-hi link @markup.heading             @text.title
-hi link @markup.quote               @text.quote
-hi link @markup.link.url            @text.uri
-hi link @markup.math                @text.math
-hi link @markup.environment         @text.environment
-hi link @markup.environment.name    @text.environment.name
-hi link @markup.link                @text.reference
-hi link @markup.raw                 @text.literal
-hi link @markup.raw.block           @text.literal.block
-hi link @markup.link.label          @string.special
-hi link @markup.list                @punctuation.special
+
+hi @markup.list.checked             guifg=#30cf30
+hi @markup.list.unchecked           guifg=#f0f0f0
 
 " Helix captures
 hi link @function.method            @method
@@ -244,14 +242,17 @@ hi link @keyword.import             @include
 hi link @keyword.repeat             @repeat
 
 " PHP
-hi def link @variable.php               Identifier
-hi def link @variable.builtin.php       Type
+hi link @variable.php               Identifier
+hi link @variable.builtin.php       Type
 
-hi def link @module.php                 @type
-hi def link @method.php                 Normal
-hi def link @function.call.php          @method.php
-hi def link @function.method.php        @method.php
-hi def link @function.method.call.php   @method.php
+hi link @module.php                 @type
+hi link @method.php                 Normal
+hi link @function.call.php          @method.php
+hi link @function.method.php        @method.php
+hi link @function.method.call.php   @method.php
+
+hi TreesitterContext       guibg=#202030
+hi TreesitterContextBottom gui=underline guisp=#606080
 
 " nerdtree-git-plugin
 hi NERDTreeGitStatusUntracked guifg=#666666
@@ -291,7 +292,7 @@ local links = {
   ['@lsp.type.decorator'] = '@function',
 }
 for newgroup, oldgroup in pairs(links) do
-  vim.api.nvim_set_hl(0, newgroup, { link = oldgroup, default = true })
+  vim.api.nvim_set_hl(0, newgroup, { link = oldgroup, default = false })
 end
 
 EOF
