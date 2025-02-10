@@ -272,6 +272,16 @@ hi def link GitGutterChangeDelete DiffChange
 
 hi! def link NERDTreeGitStatusDirty NERDTreeGitStatusModified
 
+" lualine.nvim
+hi LuaLineDiffAdd     guifg=#74ff74 guibg=#4e4e4e
+hi LuaLineDiffDelete  guifg=#ff7474 guibg=#4e4e4e
+hi LuaLineDiffChange  guifg=#ccaa00 guibg=#4e4e4e
+
+hi LuaLineDiagnosticError  guifg=#c01020 guibg=#4e4e4e
+hi LuaLineDiagnosticWarn   guifg=#ffcc00 guibg=#4e4e4e
+hi LuaLineDiagnosticInfo   guifg=#ff00ff guibg=#4e4e4e
+hi LuaLineDiagnosticHint   guifg=#66777f guibg=#4e4e4e
+
 " https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316
 lua <<EOF
 
