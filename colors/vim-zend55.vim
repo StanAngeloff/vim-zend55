@@ -282,6 +282,10 @@ hi LuaLineDiagnosticWarn   guifg=#ffcc00 guibg=#4e4e4e
 hi LuaLineDiagnosticInfo   guifg=#ff00ff guibg=#4e4e4e
 hi LuaLineDiagnosticHint   guifg=#66777f guibg=#4e4e4e
 
+" fzf-lua
+hi FzfLuaHeaderText guifg=#888888 guibg=NONE gui=NONE
+hi FzfLuaHeaderBind guifg=#888888 guibg=NONE gui=NONE
+
 " https://gist.github.com/swarn/fb37d9eefe1bc616c2a7e476c0bc0316
 lua <<EOF
 
